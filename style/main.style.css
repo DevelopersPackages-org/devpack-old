@@ -12,7 +12,8 @@ div.head {
 }
 div.main div.content {
   width: 80vw;
-  height: calc(100vh - 1.25em);
+  height: 100vh;
+  padding: 1.25em;
   margin: 0 auto;
   background-color: aquamarine;
 }
