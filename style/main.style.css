@@ -6,6 +6,11 @@
   font-family: "NoTofu";
   src: url(../font/NotoSansCJKjp-DemiLight.otf);
 }
+:root {
+  --base-font-color: #c993ff;
+  --base-font-color-hover: #b169fa;
+}
+
 
 * {
   font-family: 'Ubuntu', "NoTofu";
@@ -28,7 +33,7 @@ h2{
 nav {
   box-shadow: 0px 0px 3.5px 0.5px #000000;
   margin: 0;
-  color: skyblue;
+  color: var(--base-font-color);
   padding: 10px;
 }
 nav:first-child {
@@ -37,7 +42,7 @@ nav:first-child {
 .brand-logo {
   font-size: 30px;
   text-decoration: none;
-  color: skyblue;
+  color: #c993ff;
 }
 #menu {
   float: left;
@@ -60,29 +65,42 @@ nav:first-child {
 }
 #menu ul li a {
   text-decoration: none;
-  color: skyblue;
+  color: var(--base-font-color);
 }
 
 a{
-  color: skyblue;
+  color: var(--base-font-color);
   text-decoration: none;
 }
 a:hover:not(.brand-logo){
-  color:#00aaff;
-  text-decoration: none;
+  color: var(--base-font-color-hover);
+  text-decoration: solid underline purple 0.05em;
 }
 #menu ul li a:hover{
-  color:#00aaff;
-  text-decoration: none;
+  color: var(--base-font-color-hover);
+  text-decoration: solid underline purple 0.05em;
 }
 .navlist {
-  display: flex;
-  justify-content: flex-end;
+  display: inline;
   list-style: none;
+  width:70%;
 }
 .navlist li {
   width: 90px;
+  float:right;
+  height:30px;
+  margin-top:6px;
+  color: #c993ff;
 }
+
+.navlist li a{
+  text-decoration-color: none;
+}
+
+.navlist li a:hover{
+  text-decoration: solid underline purple 0.05em;
+}
+
 .project-card{
   background-color: white;
   width:400px;
