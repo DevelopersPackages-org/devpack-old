@@ -120,3 +120,28 @@ a:hover:not(.brand-logo){
   padding:7.5px;
   border-top: #aaaaaa solid 1px;
 }
+
+.form-wrap > label{
+  display:block;
+  margin-top:0.25em;
+}
+.form-wrap > input[type=text]{
+  border-radius:5px;
+  border:#aaaaaa solid 0.5px;
+  width:20em;
+}
+
+.form-wrap > textarea{
+  border-radius:5px;
+  border:#aaaaaa solid 0.5px;
+  width:20em;
+  height:10em;
+}
+
+.form-wrap > input[type=submit]{
+  display:block;
+  background-color: #eeeeee;
+  border-radius: 10px;
+  border:#aaaaaa solid 1px;
+  padding:2.5px 15px 2.5px 15px;
+}
