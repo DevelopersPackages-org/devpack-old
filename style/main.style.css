@@ -1,8 +1,23 @@
+@font-face {
+  font-family: "Ubuntu";
+  src: url(../font/Ubuntu.ttf);
+}
+@font-face {
+  font-family: "NoTofu";
+  src: url(../font/NotoSansCJKjp-DemiLight.otf);
+}
+
 * {
+  font-family: 'Ubuntu', "NoTofu";
   margin: 0;
+  font-size:17.5px;
 }
 body {
   background-color: #f5f5dc;
+}
+
+h2{
+  font-size:30px;
 }
 .beige {
   background-color: #f5f5dc;
@@ -20,7 +35,7 @@ nav:first-child {
   margin-right: auto;
 }
 .brand-logo {
-  font-size: 25px;
+  font-size: 30px;
   text-decoration: none;
   color: skyblue;
 }
@@ -67,4 +82,19 @@ a:hover:not(.brand-logo){
 }
 .navlist li {
   width: 90px;
+}
+.project-card{
+  background-color: white;
+  width:400px;
+  border: #aaaaaa solid 1px;
+  border-radius: 10px;
+  padding:10px;
+}
+.pc-title{
+  display:block;
+  font-size:30px;
+}
+.pc-desc{
+  margin:5px;
+  line-height:25px;
 }
