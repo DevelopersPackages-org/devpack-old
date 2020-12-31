@@ -116,3 +116,7 @@ a:hover:not(.brand-logo){
   margin:5px;
   line-height:25px;
 }
+.pc-link{
+  padding:7.5px;
+  border-top: #aaaaaa solid 1px;
+}
